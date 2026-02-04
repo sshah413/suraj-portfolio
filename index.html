@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Shah - Video & Reel Editor - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <i class="fas fa-video"></i> Suraj.
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link">Services & Rates</a></li>
+                <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="#companies" class="nav-link">Companies</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>I'm Suraj Shah</h1>
+            <p class="hero-subtitle">Video & Reel Editor</p>
+            <p class="hero-description">A results-driven video editor specializing in Instagram Reels, YouTube Shorts, and Snapchat lenses. I turn raw footage into viral, scroll-stopping content.</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- APNA IMAGE YAHA LAGAO: Replace src="https://..." ke jaga apna image file path likho 
+                 Like: src="images/amit.jpg" ya src="images/profile.png" -->
+            <img src="Image/Suraj.png" alt="Suraj Shah">
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <p class="section-subtitle">Check out my latest works and projects</p>
+            
+            <div class="portfolio-grid">
+                <!-- PORTFOLIO CARD 1 -->
+                <div class="portfolio-card" data-video="Video/doc 1.mp4">
+                    <div class="portfolio-image" onclick="openVideoModal(this)" style="cursor: pointer;">
+                        <img src="Image/thumb 2.png" alt="Storytelling">
+                        <div class="play-button" style="cursor: pointer;">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Storytelling</h3>
+                        <p>Fast-paced editing with trendy transitions.</p>
+                        <a href="https://www.instagram.com/reel/DUTSWGXCuHp/" class="portfolio-link" target="_blank">View Storytellings →</a>
+                    </div>
+                </div>
+
+                <!-- PORTFOLIO CARD 2 -->
+                <div class="portfolio-card" data-video="Video/Porsche GT3RS 991.2 Mountain Road Cinematic 4K - Hayman Media (1080p, h264).mp4">
+                    <div class="portfolio-image" onclick="openVideoModal(this)" style="cursor: pointer;">
+                        <img src="Image/thumb 1.png" alt="Travel Vlog">
+                        <div class="play-button" style="cursor: pointer;">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Travel Vlog</h3>
+                        <p>Cinematic color grading and sound design.</p>
+                        <a href="https://www.instagram.com/reel/DT-cTy5giAn/" class="portfolio-link" target="_blank">View Travel Vlogs →</a>
+                    </div>
+                </div>
+
+                <!-- PORTFOLIO CARD 3 -->
+                <div class="portfolio-card" data-video="Video/reel 1.mp4">
+                    <div class="portfolio-image" onclick="openVideoModal(this)" style="cursor: pointer;">
+                        <img src="Image/thumb 3.png" alt="Brand Reel">
+                        <div class="play-button" style="cursor: pointer;">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Brand Reel</h3>
+                        <p>Beat-sync editing for high engagement.</p>
+                        <a href="https://www.instagram.com/reel/DUBT9CEgYNS/" class="portfolio-link" target="_blank">View Brand Reels →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Services & Rates</h2>
+            <p class="section-subtitle">Transparent pricing for professional editing</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Reels & Shorts</h3>
+                    <p class="pricing-description">High-retention editing with captions, B-roll, and effects.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Viral Hooks</li>
+                        <li><i class="fas fa-check"></i> Dynamic Captions</li>
+                        <li><i class="fas fa-check"></i> Color Grading</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>YouTube Videos</h3>
+                    <p class="pricing-description">Long-form storytelling that keeps viewers watching.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Narrative Flow</li>
+                        <li><i class="fas fa-check"></i> Sound Design</li>
+                        <li><i class="fas fa-check"></i> Motion Graphics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rate-card">
+                <h3>Get the Full Rate Card</h3>
+                <p>Want to see detailed pricing for bulk orders and monthly packages?</p>
+                <!-- PDF DOWNLOAD: 
+                     1. Apna PDF file "Rate_Card.pdf" ya "rate-card.pdf" bana aur "files" folder mein dalo
+                     2. href="files/Rate_Card.pdf" likho (apne PDF ka actual file name use karna)
+                     3. Example: href="files/my-rate-card.pdf" -->
+                <a href="PDF/SURAJ_SHAH_23FOTCA11228.pdf" class="btn btn-primary" download>Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section id="companies" class="companies">
+        <div class="container">
+            <h2>Companies I've Worked With</h2>
+            <p class="section-subtitle">Trusted by leading brands and businesses</p>
+            
+            <div class="companies-grid">
+                <!-- COMPANY 1 -->
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="Image/company1-logo.png" alt="Company 1">
+                    </div>
+                    <h3>Company Name 1</h3>
+                    <p class="company-description">Brief description of your work</p>
+                    <div class="company-links">
+                        <a href="https://www.company1.com" target="_blank" class="company-btn" title="Visit">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COMPANY 2 -->
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="Image/company2-logo.png" alt="Company 2">
+                    </div>
+                    <h3>Company Name 2</h3>
+                    <p class="company-description">Brief description of your work</p>
+                    <div class="company-links">
+                        <a href="https://www.company2.com" target="_blank" class="company-btn" title="Visit">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COMPANY 3 -->
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="Image/company3-logo.png" alt="Company 3">
+                    </div>
+                    <h3>Company Name 3</h3>
+                    <p class="company-description">Brief description of your work</p>
+                    <div class="company-links">
+                        <a href="https://www.company3.com" target="_blank" class="company-btn" title="Visit">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Client Reviews</h2>
+            <p class="section-subtitle">What my clients say about my work</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://via.placeholder.com/60x60/667eea/ffffff?text=RS" alt="Rajesh Sharma">
+                        <div>
+                            <h4>Rajesh Sharma</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Amit transformed our product videos. Engagement increased by 300% on Instagram!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://via.placeholder.com/60x60/f093fb/ffffff?text=PP" alt="Priya Patel">
+                        <div>
+                            <h4>Priya Patel</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Best editor I've worked with. Fast, professional, and very creative."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="Image/man.avif" alt="Sarabjit Singh">
+                        <div>
+                            <h4>Sarabjit Singh</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"You are truly great and genius. Your hard work and dedication inspire me. Thank you for being there!"</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <h3>250+</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="stat">
+                    <h3>150+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat">
+                    <h3>50M+</h3>
+                    <p>Total Views</p>
+                </div>
+                <div class="stat">
+                    <h3>15+</h3>
+                    <p>Awards</p>
+                </div>
+            </div>
+
+            <!-- Add Review Section -->
+            <div class="review-form-section">
+                <h3>Share Your Experience</h3>
+                <p class="review-form-subtitle">Did you like my work? Leave a review below!</p>
+                
+                <form class="review-form" id="reviewForm">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="rating-input">
+                        <label>Rate my work:</label>
+                        <div class="star-rating" id="starRating">
+                            <i class="fas fa-star" data-rating="1"></i>
+                            <i class="fas fa-star" data-rating="2"></i>
+                            <i class="fas fa-star" data-rating="3"></i>
+                            <i class="fas fa-star" data-rating="4"></i>
+                            <i class="fas fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="ratingValue" value="5" required>
+                    </div>
+                    
+                    <textarea placeholder="Write your review here..." rows="4" required></textarea>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Rajkot, Gujarat, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:hloamitji@gmail.com">SurajShah@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919723213483">+91 97232 13483</a></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/shahsuraj34/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1DxRzYbogj/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/@hindicinemaguru?si=2UATSQ9PJJdyMCu0" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/ShahSuraj34" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mr-suraj-shah-3a915a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Suraj Shah. All rights reserved.</p>
+            <p>Creating scroll-stopping content that converts.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="modalVideo" width="100%" controls autoplay>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
